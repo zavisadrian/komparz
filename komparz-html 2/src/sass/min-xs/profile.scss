@@ -1,0 +1,159 @@
+#profile{
+	background-repeat: no-repeat;
+	margin-top: 4rem;
+	background-position: 100% 0rem;
+	background-size: auto 14rem;
+	p{
+		&.white{
+			color: #fff;
+			font-weight: 300;
+		}
+	}
+	.icon-links{
+		display: inline-block;
+		.btn{
+			padding: spacer(2) spacer(3);
+			height: 35px;
+			color: $orange;
+			border:1px solid $gray-400;
+			i{
+				font-size: 18px;
+			}
+		}
+	}
+	h3{
+		color: $orange;
+	}
+	.border-image{
+		border: 3px solid #fff;
+	}
+	.profile-photo{
+		.owl-nav{
+			text-align: center;
+			font-size: 44px;
+		}
+		.owl-prev{
+			position: relative;
+			left: -4px;
+		}
+		.owl-next{
+			position: relative;
+			right: -4px;
+		}
+	}
+	.profile-btns{
+		position: relative;
+		
+		.btn{
+			font-weight: 400;
+			text-align: center;
+			padding: spacer(3) spacer(0);
+			position: relative;
+			z-index: 2;
+
+			&.btn-active{
+				background-color: $orange;
+				border-color: $orange;
+
+				&::before{
+					content: "";
+					width: 20px;
+					height: 20px;
+					background-color: $orange;
+					position: absolute;
+					top: -9px;
+					transform: rotate(45deg);
+					z-index: 1;
+					right: 46%;
+				}
+			}
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.example-image-link{
+			img{
+				padding: spacer(1) spacer(0);
+			}
+		}
+	}
+	.orange{
+		color: $orange;
+		font-weight: 600;
+	}
+	.about-me{
+		p{
+			margin-bottom: 1rem;
+		}
+		.btn-primary{
+			padding: spacer(3);
+			font-weight: 600;
+		}
+	}
+
+
+	.cropped-image {
+		position: relative;
+		z-index: 1;
+
+		.cropped-image-overlay{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			&.delete{
+				opacity: 0;
+
+				&:before{
+					content: "\f00d";
+					font-family: FontAwesome;
+					font-size: 30px;
+					color: $danger;
+				}
+
+				&:hover{
+					opacity: 1;
+				}
+			}
+
+			&:before{
+				content: "\f055";
+				font-family: FontAwesome;
+				font-size: 30px;
+				color: #e18b1e;
+			}
+
+			&:hover{
+				background-color: rgba(#000, 0.1);
+				transition: 0.3s ease;
+			}
+
+		}
+	}
+
+	.tabs{
+		margin-right: -(spacer(1));
+		margin-left: -(spacer(1));
+	}
+
+}
+#account{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+	top: -2.5rem;
+	h2{
+		font-weight: 500;
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+}

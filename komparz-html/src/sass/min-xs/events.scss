@@ -1,0 +1,47 @@
+#events{
+	background-image: url(/images/events-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	.owl-dots{
+		display: block;
+		text-align: center;
+	}
+	.owl-dot{
+		margin: spacer(3) spacer(1);
+
+		span{
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			display: inline-block;
+		}
+
+		&.active{
+			span{
+				background-color: $orange;
+			}
+		}
+	}
+}
+.event{
+	background-image: url(/images/event.jpg);
+	i{
+		color: #fff;
+		font-size: 36px;
+	}
+	h2,h3,p{
+		color: #fff;
+	}
+	h2{
+		font-size: 50px;
+		font-weight: 500;
+	}
+	h3{
+		font-size: 26px;
+	}
+	.card-body{
+		background-color: #fff;
+		p{color: #000;}
+	}
+}

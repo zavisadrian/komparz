@@ -1,0 +1,70 @@
+#banner{
+	height: 100vh;
+
+	.owl-dots{
+		position: absolute;
+		bottom: 2rem;
+		text-align: center;
+		width: 100%;
+
+		.owl-dot{
+			margin: 0 spacer(1);
+
+			span{
+				width: 10px;
+				height: 10px;
+				background-color: $secondary;
+				display: inline-block;
+			}
+
+			&.active{
+				span{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.owl-item, .item{
+		height: 100vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.slider-content{
+		position: absolute;
+		right: 7%;
+		top: 15%;
+		width: 87%;
+		padding: spacer(6) spacer(5);
+		background-image: url(/../images/shaped-bg.png);
+		background-size: cover;
+		color: #fff;
+
+		h2{
+			font-weight: $font-weight-light;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		h1{
+			font-weight: $font-weight-semi-bold;
+			text-transform: uppercase;
+			font-size: 52px;
+			line-height: 65px;
+		}
+
+		p{
+			font-weight: $font-weight-light;
+			font-size: 12px;
+		}
+
+		hr{
+			margin-left: unset;
+		}
+
+		.btn{
+			width: 230px;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+// Body
+$body-color: #19212e;
+$body-bg: #fff;
+
+// Typography
+$font-family-base: 'Montserrat', sans-serif;
+$font-weight-light: 300;
+//$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+//$font-weight-extra-bold: 800;
+$custom-file-text: (
+	sk: 'Vybrať',
+);
+
+$up-font-montserrat-use:(
+	'600-normal': true,
+	'800-normal': true,
+	'400-italic': true,
+);
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1230px
+);
+
+// Animate
+$use-bounce: true;
+$use-slide-in: true;
+$use-fade-in: true;
+$use-slide-enter: true;
+$use-fade-enter: true;
+
+// Colors
+$orange: #e18b1e;
+$blue-dark: #222936;
+$dark: #19212e;
+
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-550: #999999;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Primary colors
+$primary: $orange;
+$secondary: $dark;
+$tertiary: $blue-dark;
+$quaternary: #303742;
+
+// Theme colors
+$theme-colors: (
+	'tertiary': $tertiary,
+	'quaternary': $quaternary,
+	'white': #fff,
+);

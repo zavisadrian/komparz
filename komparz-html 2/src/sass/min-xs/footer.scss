@@ -1,0 +1,31 @@
+footer{
+	background-color: $secondary;
+	overflow-y: hidden;
+
+	img.logo-footer{
+		width: 50%;
+		padding-bottom: spacer(2);
+	}
+
+	p{
+		font-weight: $font-weight-light;
+		color: #fff;
+		font-size: 10px;
+	}
+
+	a{
+		font-weight: $font-weight-light;
+		color: #fff;
+		font-size: 12px;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+	.mybr{display: block;}
+	.links{
+		a{
+			display: block;
+		}
+	}
+}

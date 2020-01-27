@@ -1,0 +1,91 @@
+#last-registered{
+	background-color: $gray-100;
+	background-image: url(/../images/last-registred.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	.square{
+		width: 80%;
+		padding-bottom: 80%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $primary;
+
+		.fa{
+			color: #fff;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			font-size: 24px;
+			line-height: 59px;
+		}
+	}
+
+	h2{
+		font-weight: $font-weight-semi-bold;
+		color: $secondary;
+	}
+
+	p{
+		color: $gray-600;
+	}
+	.model-photo{
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+
+		.overlay{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			visibility: hidden;
+			background-color: rgba($primary, 0.9);
+
+			h2{
+				font-size: 20px;
+				color: #fff;
+			}
+
+			p{
+				color: #fff;
+				font-size: 12px;
+			}
+		}
+
+		&:hover .overlay{
+			visibility: visible;
+			animation: fadeInLeftBig .4s;
+		}
+	}
+
+	.filter{
+		padding: spacer(4);
+		padding-right: 0;
+
+		h2{
+			color: #fff;
+			margin-bottom: spacer(4);
+		}
+
+		a{
+			color: #fff;
+			font-size: 14px;
+			font-weight: $font-weight-light;
+			line-height: 1.8;
+			display: block;
+
+			&:hover{
+				color: $secondary;
+			}
+		}
+	}
+}

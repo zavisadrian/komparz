@@ -1,0 +1,43 @@
+@media (min-width: map-get($grid-breakpoints, lg)) {
+	#profile{
+		background-size: 100% 14rem;
+		.profile-photo{
+			.owl-prev{
+				position: relative;
+				top: -14rem;
+			}
+			.owl-next{
+				position: relative;
+				top: -14rem;
+			}
+		}
+	}
+	#database{
+		background-size: 100% 14rem;
+		.filter-container{
+			display: block;
+		}
+	}
+	#banner{
+		.slider-content{
+			width: 40%;
+			left: unset;
+			h1{
+				font-size: 60px;
+			}
+		}
+	}
+	#add_casting{
+		.border-orange{
+			border-top: 2px solid $orange;
+			border-left: none;
+			padding: 0;
+			padding-left: spacer(2);
+		}
+	}
+	#navbarDefault{
+			position: unset;
+			top: unset;
+			width: unset!important;
+		}
+}

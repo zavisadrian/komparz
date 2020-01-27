@@ -1,0 +1,46 @@
+.navbar{
+	padding: 0 spacer(3);
+	height: 66px;
+
+	.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: $gray-600;
+				font-size: 12px;
+				font-weight: $font-weight-semi-bold;
+				padding-right: spacer(2);
+				padding-left: spacer(2);
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.btn-navbar{
+		color: $primary;
+		font-weight: $font-weight-semi-bold;
+
+		&:hover{
+			color: $primary!important;
+			background-color:#fff!important;
+
+		}
+	}
+
+	.navbar-nav{
+		background-color: #fff;
+	}
+
+	.menu{
+		i{
+			color: #6c757d;
+			padding: 25px 8px
+		}
+	}
+	.reg{
+		color: #fff;
+		background-color: $orange;
+	}
+}

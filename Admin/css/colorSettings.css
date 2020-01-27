@@ -1,0 +1,23 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.orangeText {
+    color: #c37818 !important;
+}
+
+.orangeBackground {
+    background-color: #e18b1d!important;
+}
+
+.orangeBorder {
+    border-color: #e18b1d!important;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+input[type=text], select, input[type=file], textarea {
+    -webkit-appearance: none;
+}

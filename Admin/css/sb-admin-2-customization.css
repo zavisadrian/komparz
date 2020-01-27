@@ -1,0 +1,11 @@
+.btn-icon-split {
+    margin: auto -10px !important;
+}
+
+.cs-table-row {
+    transition: all 0.2s ease;
+}
+
+.cs-table-row:hover {
+    background: rgba(255, 223, 173, 0.7);
+}

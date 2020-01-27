@@ -1,0 +1,16 @@
+#offer-find-banner{
+	background-image: url(/../images/orange-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+
+	h2{
+		font-weight: $font-weight-bold;
+		text-transform: uppercase;
+	}
+
+	p{
+		font-size: 12px;
+		font-weight: $font-weight-light;
+	}
+}

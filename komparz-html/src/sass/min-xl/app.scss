@@ -1,0 +1,44 @@
+@media (min-width: map-get($grid-breakpoints, xl)) {
+	#kind-of-members{
+		h2{
+			font-size: 24px;
+		}
+	}
+	#profile{
+		.info{
+			position: relative;
+			top: -3rem;
+		}
+		.profile-photo{
+			.owl-prev{
+				position: relative;
+				top: -19rem;
+			}
+			.owl-next{
+				position: relative;
+				top: -19rem;
+			}
+		}
+	}
+	#last-registered{
+		background-size: 34%;
+	}
+	#banner{
+		.slider-content{
+			.btn{
+				width: unset;
+			}
+		}
+	}
+	#profil{
+		background-size: 100% 13rem;
+	}
+	#events{
+		padding-top: 5rem;
+	}
+	#add_casting{
+		.border-orange{
+			padding: spacer(4);
+		}
+	}
+}

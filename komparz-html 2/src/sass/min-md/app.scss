@@ -1,0 +1,194 @@
+@media (min-width: map-get($grid-breakpoints, md)) {
+	#banner{
+		.slider-content{
+			left: 7%;
+			top: 25%;
+			width: 52%;
+			h1{
+				font-size: 60px;
+			}
+		}
+	}
+
+	.text{
+		padding: 1.5rem;
+	}
+	#kind-of-members{
+		background-size: 50%;
+	}
+	#form{
+		input[type=text],select,.front_face{
+			padding: spacer(3) spacer(3)!important;
+		}
+	}
+	#profile{
+		background-size: auto 24rem;
+		.stats{
+			p{
+				color: #fff;
+			}
+		}
+		.icon-links{
+			.btn{
+				border:none;
+			}
+		}
+		.profile-photo{
+			.owl-nav{
+				text-align: center;
+				font-size: 44px;
+			}
+			.owl-prev{
+				position: relative;
+				top: -10rem;
+				left: -46%;
+			}
+			.owl-next{
+				position: relative;
+				top: -10rem;
+				right: -46%;
+			}
+		}
+		.profile-btns{
+			top: -4.2rem;
+
+			&.registration{
+				top: 0;
+			}
+		}
+	}
+	#database{
+		background-size: auto 16rem;
+		.filtered{
+			.image{
+				margin-top: 0;
+			}
+		}
+		.filter2{
+			top: 0;
+			right: -89.7%;
+		}
+	}
+	#last-registered{
+		height: 70vh;
+		background-position: center right;
+	}
+	#events{
+		position: relative;
+		top: -4rem;
+		height: 70vh;
+	}
+	footer{
+		.mybr{
+			display: unset;
+		}
+	}
+	.square-checkbox {
+		&.custom-control{
+				min-height: auto;
+				height: 1rem;
+				margin-top: unset;
+				padding-left: 2rem;
+		}
+
+		.custom-control-label {
+				&::before {
+						top: 0.2rem;
+						left: -1.6rem;
+						width: .8rem;
+						height: .8rem;
+						background-color: transparent;
+						border: #FFF solid 1px;
+						border-radius: 1px;
+				}
+				&::after {
+						top: 0.2rem;
+						left: -1.6rem;
+						width: .8rem;
+						height: .8rem;
+						border-radius: 1px;
+				}
+		}
+		.custom-control-input:checked ~ .custom-control-label::after {
+				background-color: #FFF;
+		}
+		.custom-control-label {
+				font-size: 12px;
+				font-weight: normal;
+				color: #FFF;
+		}
+	}
+	.to-second-step{
+		font-size: unset;
+	}
+	#blog-home{
+		.blog-box{
+			.blog-image{
+				background-size: cover;
+				background-position: center;
+				height: 100%!important;
+			}
+		}
+	}
+	#add_casting{
+		.filter-btn{
+			width: unset;
+			margin-top: 5px;
+		}
+	}
+	#modal-template{
+		.modal-content {
+			background-color: #fff;
+			margin: 12% auto;
+			padding: 60px;
+			border: 1px solid #888;
+			width: 50%;
+		}
+		&.online-reservation{
+			.modal-content{
+				width: 80%;
+			}
+			.front_face{
+				padding: 10px 15px!important;
+				border: 1px solid $gray-550;
+				.bg{
+					background-color: transparent!important;
+				}
+				.content{
+					color: $gray-550!important;
+					svg{
+						fill: $gray-550!important;
+					}
+				}
+				.placeholder,.current_value{
+					font-size: 12px;
+				}
+				.placeholder{
+					color: $gray-550!important;
+				}
+			}
+			.back_face{
+				ul{
+					a{
+						padding: 2px 10px!important;
+						color: $gray-550;
+					}
+				}
+			}
+		}
+		.log-in{
+			.modal-content{
+				width: 30rem;
+			}
+		}
+		.message{
+			.modal-content{
+				width: 35rem;
+			}
+		}
+	}
+	select{
+		height: unset;
+		background-color: #fff;
+	}
+}

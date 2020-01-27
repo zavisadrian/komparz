@@ -1,0 +1,280 @@
+a, a:hover,
+button, button:hover{
+	transition: all .4s ease-out;
+	text-decoration: none;
+}
+
+button:focus{
+	outline: none;
+}
+
+
+
+main{
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin-bottom: 0;
+}
+
+h1{
+	font-size: 32px;
+	font-weight: $font-weight-bold;
+}
+
+h2{
+	font-size: 22px;
+	font-weight: $font-weight-light;
+}
+
+h3, .h3-link{
+	font-size: 16px;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+}
+
+h4{
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h5{
+	font-size: 12px;
+	font-weight: $font-weight-semi-bold;
+}
+
+p{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.btn{
+	font-weight: $font-weight-bold;
+	font-size: 12px;
+	border-radius: 0px;
+	padding: spacer(2) spacer(4);
+	border-width: 1px;
+	border-style: solid;
+
+	&.btn-navbar{
+		border: none;
+		display: inline-block;
+		position: relative;
+		padding: spacer(4) spacer(3);
+	}
+	&.btn-primary{
+		color: #fff!important;
+		font-weight: $font-weight-light;
+		text-transform: uppercase;
+	}
+	&.btn-quaternary{
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&.btn-secondary{
+		text-transform: uppercase;
+	}
+	&.btn-dark{
+		color: #fff!important!important;
+		&.btn-outline-dark{
+			color: #fff;
+		}
+	}
+	&.btn-white{
+		color: $orange;
+	}
+	&.btn-outline-white:hover{
+		color: $orange!important;
+	}
+}
+
+hr.white{
+	border-color: #fff;
+}
+input,a,textarea{
+	&:focus{
+		outline: none;
+	}
+}
+input[type=text], input[type=password], input[type=date],select,.custom-file-input,textarea{
+	color: $gray-550;
+	margin-top: spacer(2);
+	font-size: 12px;
+	padding: spacer(2) spacer(3);
+	width: 100%;
+	border: 1px solid $gray-550;
+	border-radius: 0px;
+	.bg{
+		background-color: transparent!important;
+	}
+	.placeholder{
+		color: $gray-550!important;
+	}
+
+	&.registration-input {
+		line-height: 28px;
+	}
+}
+.select2{
+	margin-top: spacer(2);
+	width: 100%!important;
+}
+.select2-selection{
+	border-radius: 0px!important;
+	padding: spacer(2) spacer(3);
+	height: unset!important;
+	font-size: 12px;
+	&:focus{
+		outline: none!important;
+	}
+}
+.select2-selection__rendered{
+	padding-left: 0!important;
+}
+.select2-selection__arrow{
+	top: 10px!important;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: $gray-550!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: $gray-550!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: $gray-550!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: $gray-550!important;
+}
+.square-checkbox {
+	&.custom-control{
+			min-height: auto;
+			height: 2rem;
+			padding-left: 3rem;
+			margin-top: 1rem;
+	}
+
+	.custom-control-label {
+			&::before {
+					top: 0.2rem;
+					left: -2.3rem;
+					width: 1.8rem;
+					height: 1.8rem;
+					background-color: transparent;
+					border: #FFF solid 1px;
+					border-radius: 1px;
+			}
+			&::after {
+					top: 0.2rem;
+					left: -2.3rem;
+					width: 1.8rem;
+					height: 1.8rem;
+					border-radius: 1px;
+			}
+	}
+	.custom-control-input:checked ~ .custom-control-label::after {
+			background-color: #FFF;
+	}
+	.custom-control-label {
+			font-size: 20px;
+			font-weight: normal;
+			color: #FFF;
+	}
+
+	&.orange {
+		.custom-control-label {
+			&::before {
+				border: #000 solid 1px;
+			}
+		}
+		.custom-control-input:checked ~ .custom-control-label::after {
+			background-color: $primary;
+		}
+		.custom-control-label {
+			color: #000;
+		}
+	}
+}
+
+#navbarDefault{
+	position: absolute;
+	top: 4rem;
+	width: 100%!important;
+}
+
+.join, #find, .show-mob-filter, #hide{
+	color: #fff!important;
+}
+
+select{
+	height: 3.2rem;
+	background-color: transparent;
+}
+
+.membership{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.casting-info{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.custom-file-label{
+	font-size: 14px;
+}
+
+input[type="file"].image-upload-input {
+	display: none;
+}
+
+.image-upload-label {
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+.custom-checkbox {
+	&.custom-control{
+		padding: 1rem 1.5rem;
+		display: inline-flex;
+	}
+
+	.custom-control-label {
+		&::before {
+			top: 0.2rem;
+			left: -1.5rem;
+			width: 1rem;
+			height: 1rem;
+			background-color: transparent;
+			border: #000 solid 1px;
+			border-radius: 1px;
+		}
+		&::after {
+			top: 0.2rem;
+			left: -1.5rem;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 1px;
+		}
+	}
+
+	.custom-control-input:checked ~ .custom-control-label::after {
+		background-color: $primary;
+	}
+
+	.custom-control-label {
+		font-size: 14px;
+		font-weight: normal;
+		color: #000;
+	}
+}

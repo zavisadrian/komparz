@@ -1,0 +1,21 @@
+#about{
+	h3{
+		color: $primary;
+		margin-bottom: spacer(3);
+	}
+
+	h2{
+		font-weight: $font-weight-semi-bold;
+	}
+
+	h5{
+		color: $primary;
+		margin-bottom: spacer(4);
+	}
+
+	p{
+		font-weight: $font-weight-light;
+		font-size: 14px;
+		color: $gray-600;
+	}
+}

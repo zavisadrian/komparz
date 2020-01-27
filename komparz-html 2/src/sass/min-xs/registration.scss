@@ -1,0 +1,45 @@
+#registration{
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 4rem;
+	h1{
+		text-transform: uppercase;
+	}
+	h1,h2{
+		color: #fff;
+	}
+}
+#form{
+	h3{
+		color: $primary;
+		margin-bottom: spacer(2);
+		margin-top: spacer(4);
+	}
+	input[type=text],select,.front_face{
+		padding: spacer(3) spacer(3)!important;
+	}
+	.custom-file-label::after{
+		color:#fff;
+		background-color: $dark;
+		border-radius: 0px;
+		font-weight: 600;
+	}
+	.custom-file{
+		margin-top: spacer(3);
+		.custom-file-input{
+			border-radius: 0px;
+		}
+	}
+	.custom-control-label{
+		color: $gray-550;
+		&::before{
+			border: $gray-550 solid 1px;
+		}
+	}
+	.custom-control-input:checked ~ .custom-control-label::after {
+		background-color: $orange;
+	}
+}
+.to-second-step{
+	font-size: 20px;
+}
